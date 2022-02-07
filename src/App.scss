@@ -1,11 +1,16 @@
-App.css html,
+html,
 body,
 #root {
   font: 0.9rem sans-serif;
-  background: #0a1f44;
-  color: #1e2432;
-  height: 100%;
+}
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
@@ -16,7 +21,7 @@ body,
 }
 
 .container {
-  height: 100%;
+  height: min(100vh, 720px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +96,6 @@ p {
   }
 
   .city {
-    padding: 40px 20%;
+    padding: 20px 20%;
   }
 }
